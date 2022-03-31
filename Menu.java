@@ -137,7 +137,7 @@ class Driver {
                     System.out.printf("Invalid selection %d\n", selection);
                 }
             } catch (Exception e) {
-                System.out.println("Not a number");
+                System.out.println("Is not a number");
             }
         }
     }
