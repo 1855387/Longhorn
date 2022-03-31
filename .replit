@@ -1,5 +1,5 @@
 compile = "javac -classpath .:target/dependency/ -d . $(find . -type f -name '*.java')"
-run = "javac Menu.java; java Menu; rm *.class"
+run = ["java", "-classpath", ".:target/dependency/*", "Menu"]
 
 entrypoint = "Menu.java"
 hidden = ["**/*.class"]
@@ -57,4 +57,4 @@ type = "request"
 
 [debugger.interactive.launchMessage.arguments]
 classPaths = ["."]
-mainClass = "Main"
+mainClass = "Menu"
