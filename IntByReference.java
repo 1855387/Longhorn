@@ -9,11 +9,11 @@ public class IntByReference {
         return (String.format("%d", this.value));
     }
 
-    public void swapToLowHighOrder(IntByReference i) {
-        if (this.value > i.value) {
+    public void swapToLowHighOrder(IntByReference x) {
+        if (this.value > x.value) {
             int tmp = this.value;
-            this.value = i.value;
-            i.value = tmp;
+            this.value = x.value;
+            x.value = tmp;
         }
     }
 
