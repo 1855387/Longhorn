@@ -5,7 +5,7 @@
 
 ## Github Pages Link
  
-- [Charlie Github Page](https://1855387.github.io/individual/Repl)
+- [Charlie Github Page](https://1855387.github.io/IndividualCSAR/Repl)
 
 ## Replit Link
 
