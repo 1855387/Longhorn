@@ -1,3 +1,5 @@
+package Week1;
+
 public class LinkedList<T>{
   private T data;
   private LinkedList<T> prevNode, nextNode;

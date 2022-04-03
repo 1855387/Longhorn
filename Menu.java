@@ -1,5 +1,4 @@
-import Week0.IntByReference;
-import Week0.Matrix;
+import Week1.QueueTester;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -108,7 +107,7 @@ class Driver {
                 new MenuRow("Exit", () -> main(null)),
                 new MenuRow("Swap", () -> Week0.IntByReference.main(null)),  // lambda style, () -> to point to Class.Method
                 new MenuRow("Matrix", () -> Week0.Matrix.main(null)),
-                new MenuRow("Queue", () -> QueueTester.main(null)),
+                new MenuRow("Queue", () -> Week1.QueueTester.main(null)),
                 new MenuRow("Calculator", () -> Calculator.main(null))
         };
 

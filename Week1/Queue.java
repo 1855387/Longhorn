@@ -1,23 +1,25 @@
+package Week1;
+
 import java.util.Iterator;
 
 /**
- * Queue: custom implementation
+ * Week2.Queue: custom implementation
  * @author John Mortensen
  *
- * 1. Uses custom LinkedList of Generic type T
+ * 1. Uses custom Week2.LinkedList of Generic type T
  * 2. Implements Iterable
- * 3. "has a" LinkedList for head and tail
+ * 3. "has a" Week2.LinkedList for head and tail
  */
 public class Queue<T> implements Iterable<T> {
   LinkedList<T> head, tail;
   
   /**
-    *  Add a new object at the end of the Queue,
+    *  Add a new object at the end of the Week2.Queue,
     *
-    * @param  data,  is the data to be inserted in the Queue.
+    * @param  data,  is the data to be inserted in the Week2.Queue.
     */
   public void add(T data) {
-    // add new object to end of Queue
+    // add new object to end of Week2.Queue
     LinkedList<T> tail = new LinkedList<>(data, null);
     if (head == null)  // initial condition
       this.head = this.tail = tail;
@@ -34,7 +36,7 @@ public class Queue<T> implements Iterable<T> {
   /**
     *  Returns the head object.
     *
-    * @return  this.head, the head object in Queue.
+    * @return  this.head, the head object in Week2.Queue.
     */
   public LinkedList<T> getHead() {
     return this.head;
@@ -43,7 +45,7 @@ public class Queue<T> implements Iterable<T> {
   /**
     *  Returns the tail object.
     *
-    * @return  this.tail, the last object in Queue
+    * @return  this.tail, the last object in Week2.Queue
     */
   public LinkedList<T> getTail() {
     return this.tail;
@@ -60,15 +62,15 @@ public class Queue<T> implements Iterable<T> {
 }
 
 /**
- * Queue Iterator
+ * Week2.Queue Iterator
  *
- * 1. "has a" current reference in Queue
+ * 1. "has a" current reference in Week2.Queue
  * 2. supports iterable required methods for next that returns a data object
  */
 class QueueIterator<T> implements Iterator<T> {
   LinkedList<T> current;  // current element in iteration
 
-  // QueueIterator is intended to the head of the list for iteration
+  // Week2.QueueIterator is intended to the head of the list for iteration
   public QueueIterator(Queue<T> q) {
     current = q.getHead();
   }
@@ -87,9 +89,9 @@ class QueueIterator<T> implements Iterator<T> {
 }
 
 /**
- * Queue Manager
- * 1. "has a" Queue
- * 2. support management of Queue tasks (aka: titling, adding a list, printing)
+ * Week2.Queue Manager
+ * 1. "has a" Week2.Queue
+ * 2. support management of Week2.Queue tasks (aka: titling, adding a list, printing)
  */
 class QueueManager<T> {
   // queue data
@@ -98,7 +100,7 @@ class QueueManager<T> {
   public final Queue<T> queue = new Queue<>(); // queue object
 
   /**
-    *  Queue constructor
+    *  Week2.Queue constructor
     *  Title with empty queue
     */
   public QueueManager(String name) {
@@ -106,7 +108,7 @@ class QueueManager<T> {
   }
 
   /**
-    *  Queue constructor
+    *  Week2.Queue constructor
     *  Title with series of Arrays of Objects
     */
   public QueueManager(String name, T[]... seriesOfObjects) {
@@ -147,30 +149,3 @@ class QueueManager<T> {
     }
 }
 
-/**
- * Driver Class
- * Tests queue with string, integers, and mixes of Classes and types
- */
-class QueueTester {
-  public static void main(String[] args){
-    // Create iterable Queue of Words
-    Object[] words = new String[] { "seven", "slimy", "snakes", "sallying", "slowly", "slithered", "southward"};
-    // QueueManager qWords = new QueueManager("Words", words);
-    // qWords.printQueue();
-
-    QueueManager qWords = new QueueManager("Words");
-    for(Object word : words) {
-      qWords.add(word);
-      qWords.printQueue();
-    }
-    for(Object word : words) { 
-    qWords.delete();
-    qWords.printQueue();
-    }
-    
-    // Create iterable Queue of Integers
-    Object[] numbers = new Integer[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-    QueueManager qNums = new QueueManager("Integers", numbers);
-    qNums.printQueue();
-  }
-}
