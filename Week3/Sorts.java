@@ -1,7 +1,10 @@
+package Week3;
+
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
+import Week3.Merge;
 
 public class Sorts {
     private final ArrayList<Integer> data = new ArrayList<>();
