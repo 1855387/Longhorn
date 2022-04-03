@@ -3,7 +3,7 @@ package Week3;
 import java.util.ArrayList;
 
 // Java program for implementation of Selection Sort
-class Selection
+public class Selection
 {
     public static void sort(ArrayList<Integer> arr)
     {
