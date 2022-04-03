@@ -1,29 +1,22 @@
 package Week3;
 
+import java.util.ArrayList;
+
 // Java program for implementation of Bubble Sort
-class Bubble
+public class Bubble
 {
-    void bubbleSort(int arr[])
+   public static void bubbleSort(ArrayList<Integer> arr)
     {
-        int n = arr.length;
+        int n = arr.size();
         for (int i = 0; i < n-1; i++)
             for (int j = 0; j < n-i-1; j++)
-                if (arr[j] > arr[j+1])
+                if (arr.get(j) > arr.get(j+1))
                 {
                     // swap arr[j+1] and arr[j]
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+                    int temp = arr.get(j);
+                    arr.set(j, j+1);
+                    arr.set(j+1, temp);
                 }
-    }
-
-    /* Prints the array */
-    void printArray(int arr[])
-    {
-        int n = arr.length;
-        for (int i=0; i<n; ++i)
-            System.out.print(arr[i] + " ");
-        System.out.println();
     }
 
 }

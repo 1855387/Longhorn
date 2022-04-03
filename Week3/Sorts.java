@@ -17,7 +17,8 @@ public class Sorts {
             data.add((int)(Math.random() * (size+1)));
         }
         // use Inheritance and Polymorphism to replace data.sort with your own algorithm
-        data.sort(Comparator.naturalOrder());
+        Bubble.bubbleSort(data);
+
         Instant end = Instant.now();    // time capture -- end
         this.timeElapsed = Duration.between(start, end);
     }

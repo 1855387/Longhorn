@@ -1,85 +1,95 @@
 package Week3;
 
-/* Java program for Merge Sort */
-class Merge
-{
-    // Merges two subarrays of arr[].
-    // First subarray is arr[l..m]
-    // Second subarray is arr[m+1..r]
-    void merge(int arr[], int l, int m, int r)
-    {
-        // Find sizes of two subarrays to be merged
-        int n1 = m - l + 1;
-        int n2 = r - m;
+import java.util.ArrayList;
 
-        /* Create temp arrays */
-        int L[] = new int[n1];
-        int R[] = new int[n2];
+public class Merge {
+    private final ArrayList<Integer> arrayToSort;
 
-        /*Copy data to temp arrays*/
-        for (int i = 0; i < n1; ++i)
-            L[i] = arr[l + i];
-        for (int j = 0; j < n2; ++j)
-            R[j] = arr[m + 1 + j];
+    public Merge(ArrayList<Integer> arrayToSort) {
+        this.arrayToSort = arrayToSort;
+    }
 
-        /* Merge the temp arrays */
+    public ArrayList<Integer> getArrayAfterSorting() {
+        return arrayToSort;
+    }
 
-        // Initial indexes of first and second subarrays
-        int i = 0, j = 0;
+    public void divideArrayElements(int indexStart, int indexEnd) {
 
-        // Initial index of merged subarray array
-        int k = l;
-        while (i < n1 && j < n2) {
-            if (L[i] <= R[j]) {
-                arr[k] = L[i];
-                i++;
-            }
-            else {
-                arr[k] = R[j];
-                j++;
-            }
-            k++;
-        }
+        if (indexStart < indexEnd && (indexEnd - indexStart) >= 1) {
+            int middleElement = (indexEnd + indexStart) / 2;
 
-        /* Copy remaining elements of L[] if any */
-        while (i < n1) {
-            arr[k] = L[i];
-            i++;
-            k++;
-        }
+            divideArrayElements(indexStart, middleElement);
+            divideArrayElements(middleElement + 1, indexEnd);
 
-        /* Copy remaining elements of R[] if any */
-        while (j < n2) {
-            arr[k] = R[j];
-            j++;
-            k++;
+            mergeArrayElements(indexStart, middleElement, indexEnd);
         }
     }
 
-    // Main function that sorts arr[l..r] using
-    // merge()
-    void sort(int arr[], int l, int r)
-    {
-        if (l < r) {
-            // Find the middle point
-            int m =l+ (r-l)/2;
+    public void mergeArrayElements(int indexStart, int indexMiddle, int indexEnd) {
 
-            // Sort first and second halves
-            sort(arr, l, m);
-            sort(arr, m + 1, r);
+        ArrayList<Integer> tempArray = new ArrayList<>();
 
-            // Merge the sorted halves
-            merge(arr, l, m, r);
+        int getLeftIndex = indexStart;
+        int getRightIndex = indexMiddle + 1;
+
+        while (getLeftIndex <= indexMiddle && getRightIndex <= indexEnd) {
+
+            if (arrayToSort.get(getLeftIndex) <= arrayToSort.get(getRightIndex)) {
+
+                tempArray.add(arrayToSort.get(getLeftIndex));
+                getLeftIndex++;
+
+            } else {
+
+                tempArray.add(arrayToSort.get(getRightIndex));
+                getRightIndex++;
+
+            }
         }
+
+        while (getLeftIndex <= indexMiddle) {
+            tempArray.add(arrayToSort.get(getLeftIndex));
+            getLeftIndex++;
+        }
+
+        while (getRightIndex <= indexEnd) {
+            tempArray.add(arrayToSort.get(getRightIndex));
+            getRightIndex++;
+        }
+
+
+        for (int i = 0; i < tempArray.size(); indexStart++) {
+            arrayToSort.set(indexStart, tempArray.get(i++));
+
+        }
+
     }
 
-    /* A utility function to print array of size n */
-    static void printArray(int arr[])
-    {
-        int n = arr.length;
-        for (int i = 0; i < n; ++i)
-            System.out.print(arr[i] + " ");
+    public static void main(String[] args) {
+        ArrayList<Integer> integerArrayList = new ArrayList<>();
+        integerArrayList.add(23);
+        integerArrayList.add(44);
+        integerArrayList.add(12);
+        integerArrayList.add(3);
+        integerArrayList.add(76);
+
+        Merge hello = new Merge(integerArrayList);
+
+        System.out.println("Array Before Merge Sort: ");
+        for (Integer integer : hello.getArrayAfterSorting()) {
+            System.out.println(integer);
+        }
+
         System.out.println();
+
+        hello.divideArrayElements(0, integerArrayList.size() - 1);
+
+        System.out.println("Array After Merge Sort: ");
+        for (Integer integer : hello.getArrayAfterSorting()) {
+            System.out.println(integer);
+        }
+
+
     }
 }
 
