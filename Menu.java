@@ -1,3 +1,6 @@
+import Week0.IntByReference;
+import Week0.Matrix;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -103,8 +106,8 @@ class Driver {
         // Row initialize
         MenuRow[] rows = new MenuRow[]{
                 new MenuRow("Exit", () -> main(null)),
-                new MenuRow("Swap", () -> IntByReference.main(null)),  // lambda style, () -> to point to Class.Method
-                new MenuRow("Matrix", () -> Matrix.main(null)),
+                new MenuRow("Swap", () -> Week0.IntByReference.main(null)),  // lambda style, () -> to point to Class.Method
+                new MenuRow("Matrix", () -> Week0.Matrix.main(null)),
                 new MenuRow("Queue", () -> QueueTester.main(null)),
                 new MenuRow("Calculator", () -> Calculator.main(null))
         };
