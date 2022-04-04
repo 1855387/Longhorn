@@ -82,7 +82,7 @@ class Selection {
 - Sample algorithm which we built off to try and implement
 
 ``` java
-   public class Merge {
+public class Merge {
     private final ArrayList<Integer> arrayToSort;
 
     public Merge(ArrayList<Integer> arrayToSort) {
@@ -144,6 +144,26 @@ class Selection {
         }
 
     }
+
+    public static void sort(ArrayList<Integer> arr) {
+        Merge merge = new Merge(arr);
+
+        System.out.println("Array Before Merge Sort: ");
+        for (Integer integer : merge.getArrayAfterSorting()) {
+            System.out.println(integer);
+        }
+
+        System.out.println();
+
+        merge.divideArrayElements(0, arr.size() - 1);
+        System.out.println("Array After Merge Sort: ");
+        for (Integer integer : merge.getArrayAfterSorting()) {
+            System.out.println(integer);
+        }
+
+
+    }
+}
 ```
 
 ### Implementation
