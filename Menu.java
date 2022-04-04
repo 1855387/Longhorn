@@ -108,7 +108,8 @@ class Driver {
                 new MenuRow("Swap", () -> Week0.IntByReference.main(null)),  // lambda style, () -> to point to Class.Method
                 new MenuRow("Matrix", () -> Week0.Matrix.main(null)),
                 new MenuRow("Queue", () -> Week1.QueueTester.main(null)),
-                new MenuRow("Calculator", () -> Week2.Calculator.main(null))
+                new MenuRow("Calculator", () -> Week2.Calculator.main(null)),
+                new MenuRow("Algorithms", () -> Week3.Sorts.main(null))
         };
 
         // Menu construction

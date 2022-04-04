@@ -16,6 +16,7 @@ public class Sorts {
         for (int i = 0; i < size; i++) {
             data.add((int)(Math.random() * (size+1)));
         }
+
         // use Inheritance and Polymorphism to replace data.sort with your own algorithm
         switch(algo) {
             case "Merge":
@@ -69,15 +70,15 @@ public class Sorts {
         System.out.println("Total Seconds: " + time /1000000000.0);
     }
     public static void main(String[] args){
-//        System.out.println("           Bubble Data           ");
-//        statistics("Bubble");
-//        System.out.println(" ");
-//        System.out.println("           Selection Data           ");
-//        statistics("Selection");
-//        System.out.println(" ");
-//        System.out.println("           Insertion Data           ");
-//        statistics("Insertion");
-//        System.out.println(" ");
+        System.out.println("           Bubble Data           ");
+        statistics("Bubble");
+        System.out.println(" ");
+        System.out.println("           Selection Data           ");
+        statistics("Selection");
+        System.out.println(" ");
+        System.out.println("           Insertion Data           ");
+        statistics("Insertion");
+        System.out.println(" ");
         System.out.println("           Merge Data           ");
         statistics("Merge");
         System.out.println(" ");
