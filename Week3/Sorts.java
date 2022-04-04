@@ -74,7 +74,7 @@ public class Sorts {
         System.out.println("Total Nanoseconds: " + time );
         System.out.println("Total Seconds: " + time /1000000000.0);
         System.out.println("ALL times in Nanoseconds: " + lowandhigh);
-        System.out.println("Average time in seconds "+"(with high and low): "+ time/12/1000000000.0);
+        System.out.println("Average time in seconds with low and high: "+ time/12/1000000000.0);
 
         Integer nolowandhigh = 0;
         System.out.println("Low (nano): "+lowandhigh.remove(0)); // remove smallest
