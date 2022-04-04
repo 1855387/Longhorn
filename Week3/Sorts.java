@@ -90,15 +90,15 @@ public class Sorts {
         System.out.println("           Bubble Data           ");
         statistics("Bubble");
         System.out.println(" ");
-//        System.out.println("           Selection Data           ");
-//        statistics("Selection");
-//        System.out.println(" ");
-//        System.out.println("           Insertion Data           ");
-//        statistics("Insertion");
-//        System.out.println(" ");
-//        System.out.println("           Merge Data           ");
-//        statistics("Merge");
-//        System.out.println(" ");
+        System.out.println("           Selection Data           ");
+        statistics("Selection");
+        System.out.println(" ");
+        System.out.println("           Insertion Data           ");
+        statistics("Insertion");
+        System.out.println(" ");
+        System.out.println("           Merge Data           ");
+        statistics("Merge");
+        System.out.println(" ");
     }
 
 }
