@@ -1,7 +1,8 @@
 {% include navigation.html %}
 
 # Tech Talk Notes
-# Tech Talk 3 (Merge is best because of its pure efficiency)
+# Tech Talk 3 
+## (Merge is best because of its pure efficiency)
 
 ## Bubble Sort
 - Swaps adajcent elements into the correct order
