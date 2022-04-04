@@ -30,7 +30,7 @@ public class Bubble {
 >- Using this list we can find total time, as well as the largest and smallest values and remove them if nessecary
 - Data is then displayed
 
-![Output](https://files.catbox.moe/sdq6t1.png)
+![image](https://user-images.githubusercontent.com/72889453/161475420-4d0f546c-910c-4f36-b3bf-4b7450154609.png)
 
 ## Selection Sort
 - Finds the minimun value element repeadly in an ascending pattern
@@ -69,7 +69,7 @@ class Selection {
 >- Using this list we can find total time, as well as the largest and smallest values and remove them if nessecary
 - Data is then displayed
 
-![Output](https://files.catbox.moe/sxjm37.png)
+![image](https://user-images.githubusercontent.com/72889453/161475494-2b730f9d-a7b9-45bb-8457-a09c31d2a946.png)
 
 ## Merge Sort
 - Merge Sort is a divide and conquer type of algorithm
@@ -172,7 +172,7 @@ public class Merge {
 >- Using this list we can find total time, as well as the largest and smallest values and remove them if nessecary
 - Data is then displayed
 
-![Output](https://files.catbox.moe/o3fnf3.png)
+![image](https://user-images.githubusercontent.com/72889453/161475583-2c842fdf-49e5-42ae-98ee-9acc8426747b.png)
 ## Insertion Sort
 - Uses 2 arrays, sorted and unsorted, and sorts the elements within the unsorted array and addes them to the sorted array
 - **Time Complexity/Big O Notation:** O(n). This means that the time taken to sort is directly proportional to the amount of elemenets sorted. However, this is only the best case scenario. On average, and in the worst case, the Big O Notation is O(n^2) which notates a longer time taken
@@ -214,6 +214,9 @@ public class Insertion {
 - Time is recorded each time we sort and added to an arraylist
 >- Using this list we can find total time, as well as the largest and smallest values and remove them if nessecary
 - Data is then displayed
+
+![image](https://user-images.githubusercontent.com/72889453/161475721-1e62d335-891a-4bfd-b01e-cb5c0f2eef8e.png)
+
 # Tech Talk 2
 
 ## Team Notes
