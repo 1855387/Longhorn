@@ -39,6 +39,7 @@ public class Bubble {
 
 ![Flowchart](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220203094305/Selection-Sort-Flowhchart.png)
 - Example algorithm of a selection sort which we built off of and implemented:
+
 ``` java
 class Selection {
     public static void sort(ArrayList<Integer> arr) {
@@ -79,6 +80,7 @@ class Selection {
 
 ![Flowchart](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Merge-Sort-Tutorial.png)
 - Sample algorithm which we built off to try and implement
+
 ``` java
    public class Merge {
     private final ArrayList<Integer> arrayToSort;
@@ -164,6 +166,7 @@ class Selection {
     }
 }
 ```
+
 ### Implementation
 - Implementation is similar to other sorts
 - Created individual file to contain the sorting algorithm developed
