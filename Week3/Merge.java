@@ -65,29 +65,22 @@ public class Merge {
 
     }
 
-    public static void main(String[] args) {
-        ArrayList<Integer> integerArrayList = new ArrayList<>();
-        integerArrayList.add(23);
-        integerArrayList.add(44);
-        integerArrayList.add(12);
-        integerArrayList.add(3);
-        integerArrayList.add(76);
+    public static void sort(ArrayList<Integer> arr) {
+        Merge merge = new Merge(arr);
 
-        Merge hello = new Merge(integerArrayList);
+//        System.out.println("Array Before Merge Sort: ");
+//        for (Integer integer : merge.getArrayAfterSorting()) {
+//            System.out.println(integer);
+//        }
 
-        System.out.println("Array Before Merge Sort: ");
-        for (Integer integer : hello.getArrayAfterSorting()) {
-            System.out.println(integer);
-        }
+//        System.out.println();
 
-        System.out.println();
+        merge.divideArrayElements(0, arr.size() - 1);
 
-        hello.divideArrayElements(0, integerArrayList.size() - 1);
-
-        System.out.println("Array After Merge Sort: ");
-        for (Integer integer : hello.getArrayAfterSorting()) {
-            System.out.println(integer);
-        }
+//        System.out.println("Array After Merge Sort: ");
+//        for (Integer integer : merge.getArrayAfterSorting()) {
+//            System.out.println(integer);
+//        }
 
 
     }
