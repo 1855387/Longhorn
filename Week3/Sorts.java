@@ -3,6 +3,7 @@ package Week3;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import Week3.Merge;
 
@@ -54,7 +55,7 @@ public class Sorts {
 
     public static void statistics(String algo) {
         int sum=0, time=0, TIMES=12, SIZE=5000;
-
+        ArrayList<Integer> lowandhigh = new ArrayList<Integer>();
         for(int i=0; i< TIMES; i++) {
             Sorts s = new Sorts(SIZE, algo);
             for(int j = 0; j<s.getData().size(); j++) {
@@ -65,10 +66,23 @@ public class Sorts {
             System.out.println("Average random: " + sum / ((i+1)*SIZE));
             System.out.println("Nanoseconds: " + s.getTimeElapsed());
             time += s.getTimeElapsed();
+            lowandhigh.add(s.getTimeElapsed());
         }
-        System.out.println("Average random: " + sum / (TIMES*SIZE));
+        Collections.sort(lowandhigh);
+        System.out.println(" ");
+        System.out.println(algo +" Sort Analysis");
         System.out.println("Total Nanoseconds: " + time );
         System.out.println("Total Seconds: " + time /1000000000.0);
+        System.out.println("ALL times in Nanoseconds: " + lowandhigh);
+        System.out.println("Average time in seconds "+"(with high and low): "+ time/12/1000000000.0);
+
+        Integer nolowandhigh = 0;
+        System.out.println("Low (nano): "+lowandhigh.remove(0)); // remove smallest
+        System.out.println("High (nano): "+lowandhigh.remove(lowandhigh.size()-1)); //remove largest
+        for(Integer d : lowandhigh) {
+            nolowandhigh += d;
+        }
+        System.out.println("Average time in seconds without high and low: "+ nolowandhigh/10/1000000000.0);
     }
 
     public static void main(String[] args){
