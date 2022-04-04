@@ -71,6 +71,7 @@ public class Sorts {
         Collections.sort(lowandhigh);
         System.out.println(" ");
         System.out.println(algo +" Sort Analysis");
+        System.out.println("Average random: " + sum / (TIMES*SIZE));
         System.out.println("Total Nanoseconds: " + time );
         System.out.println("Total Seconds: " + time /1000000000.0);
         System.out.println("ALL times in Nanoseconds: " + lowandhigh);
@@ -89,15 +90,15 @@ public class Sorts {
         System.out.println("           Bubble Data           ");
         statistics("Bubble");
         System.out.println(" ");
-        System.out.println("           Selection Data           ");
-        statistics("Selection");
-        System.out.println(" ");
-        System.out.println("           Insertion Data           ");
-        statistics("Insertion");
-        System.out.println(" ");
-        System.out.println("           Merge Data           ");
-        statistics("Merge");
-        System.out.println(" ");
+//        System.out.println("           Selection Data           ");
+//        statistics("Selection");
+//        System.out.println(" ");
+//        System.out.println("           Insertion Data           ");
+//        statistics("Insertion");
+//        System.out.println(" ");
+//        System.out.println("           Merge Data           ");
+//        statistics("Merge");
+//        System.out.println(" ");
     }
 
 }
