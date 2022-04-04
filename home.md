@@ -29,3 +29,4 @@
 | 0 | [Crossover Grading 1](https://github.com/1855387/individual/issues/1)|
 | 1 | [Crossover Grading 2](https://github.com/1855387/individual/issues/2) |
 | 2 | [Data Structures Challenge 2 + Team Grading](https://github.com/1855387/individual/issues/3) |
+| 3 | [Analysis and Sorts](https://github.com/1855387/IndividualCSAR/issues/1#issue-1192054558) |
