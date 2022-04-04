@@ -34,6 +34,7 @@ public class Sorts {
             case "Insertion":
                 Insertion.sort(data);
                 System.out.println();
+                break;
             default:
                 System.out.println("invalid sort method");
         }
@@ -69,6 +70,7 @@ public class Sorts {
         System.out.println("Total Nanoseconds: " + time );
         System.out.println("Total Seconds: " + time /1000000000.0);
     }
+
     public static void main(String[] args){
         System.out.println("           Bubble Data           ");
         statistics("Bubble");
