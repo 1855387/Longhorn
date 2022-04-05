@@ -3,7 +3,7 @@
 # Time Box 
 **Purpose is keeping me up to date with due dates**
 
-| Week # | Due Date | What Needs to get done | Tech Talk for Reference |
+| Week # | Due Date | What needs to get done | Tech Talk for Reference |
 | ---   | ---    | ---    | ---    |
 | 0 | March 14 | - Every individual needs to manage their own Java Data Structures project that will be utilized int the coming weeks. Need to also make individual github pages.|[TT0](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-0---Data-Structures)
 | 1 | March 21 | - Individuals need to become familiar with Linked List, Circle Queues, and Stacks, and how to manage the nodes within. Menu should print the results of running the following Queue and linked list code on the project.| [TT1](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-1:-Linked-Lists-Part-2)
