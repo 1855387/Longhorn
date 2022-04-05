@@ -5,7 +5,7 @@
 ## (Merge is best because of its pure efficiency)
 
 ## Bubble Sort
-- Swaps adajcent elements into the correct order
+- Swaps adjacent elements into the correct order
 - Whole pass is then performed to ensure that the array is fully sorted, and the algorithm knows to stop
 - **Time Complexity/ Big O Notation:** Bubble sort can vary in its Big O Notation, with a worst case scenario of O(n^2) and a best case scenario of O(n)
 - Code which we built off of in the implementation process
