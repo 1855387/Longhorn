@@ -5,6 +5,8 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Scanner;
+
 import Week3.Merge;
 
 public class Sorts {
@@ -87,18 +89,54 @@ public class Sorts {
     }
 
     public static void main(String[] args){
-        System.out.println("           Bubble Data           ");
-        statistics("Bubble");
-        System.out.println(" ");
-        System.out.println("           Selection Data           ");
-        statistics("Selection");
-        System.out.println(" ");
-        System.out.println("           Insertion Data           ");
-        statistics("Insertion");
-        System.out.println(" ");
-        System.out.println("           Merge Data           ");
-        statistics("Merge");
-        System.out.println(" ");
+
+        while (1 == 1) {
+
+            Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+            System.out.print("Which sort do you want:" + "\n" + "Bubble Sort: 1" + "\n"
+                    + "Selection Sort: 2" + "\n"
+                    + "Insertion Sort: 3" + "\n"
+                    + "Merge Sort: 4" + "\n"
+                    + "All Sorts: 5" + "\n"
+                    + "Enter anything else to exit..." + "\n" + "\n"
+                    + "Input: ");
+
+            String input = myObj.nextLine();  // Read user input
+
+
+            if (input.equals("1")) {
+                System.out.println("           Bubble Data           ");
+                statistics("Bubble");
+                System.out.println(" ");
+            } else if (input.equals("2")) {
+                System.out.println("           Selection Data           ");
+                statistics("Selection");
+                System.out.println(" ");
+            } else if (input.equals("3")) {
+                System.out.println("           Insertion Data           ");
+                statistics("Insertion");
+                System.out.println(" ");
+            } else if (input.equals("4")) {
+                System.out.println("           Merge Data           ");
+                statistics("Merge");
+                System.out.println(" ");
+            } else if (input.equals("5")) {
+                System.out.println("           Bubble Data           ");
+                statistics("Bubble");
+                System.out.println(" ");
+                System.out.println("           Selection Data           ");
+                statistics("Selection");
+                System.out.println(" ");
+                System.out.println("           Insertion Data           ");
+                statistics("Insertion");
+                System.out.println(" ");
+                System.out.println("           Merge Data           ");
+                statistics("Merge");
+                System.out.println(" ");
+            } else {
+                break;
+            }
+        }
     }
 
 }
