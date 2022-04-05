@@ -26,7 +26,7 @@ public class Bubble {
 
 ### Implementation
 - Created individual file to contain the sorting algorithm developed
-- Utilized each sort as a method, which we use to sort the 5,000 element array when we use analyze()
+- Utilized each sort as a method, which we use to sort the 5,000 element array when we use statistics()
 - Time is recorded each time we sort and added to an arraylist
 >- Using this list we can find total time, as well as the largest and smallest values and remove them if nessecary
 - Data is then displayed
@@ -66,7 +66,7 @@ class Selection {
 ### Implementation
 - Implementation is similar to other sorts
 - Created individual file to contain the sorting algorithm developed
-- Utilized each sort as a method, which we use to sort the 5,000 element array when we use analyze()
+- Utilized each sort as a method, which we use to sort the 5,000 element array when we use statistics()
 - Time is recorded each time we sort and added to an arraylist
 >- Using this list we can find total time, as well as the largest and smallest values and remove them if nessecary
 - Data is then displayed
@@ -170,7 +170,7 @@ public class Merge {
 ### Implementation
 - Implementation is similar to other sorts
 - Created individual file to contain the sorting algorithm developed
-- Utilized each sort as a method, which we use to sort the 5,000 element array when we use analyze()
+- Utilized each sort as a method, which we use to sort the 5,000 element array when we use statistics()
 - Time is recorded each time we sort and added to an arraylist
 >- Using this list we can find total time, as well as the largest and smallest values and remove them if nessecary
 - Data is then displayed
@@ -213,7 +213,7 @@ public class Insertion {
 ### Implementation
 - Implementation is similar to other sorts
 - Created individual file to contain the sorting algorithm developed
-- Utilized each sort as a method, which we use to sort the 5,000 element array when we use analyze()
+- Utilized each sort as a method, which we use to sort the 5,000 element array when we use statistics()
 - Time is recorded each time we sort and added to an arraylist
 >- Using this list we can find total time, as well as the largest and smallest values and remove them if nessecary
 - Data is then displayed
