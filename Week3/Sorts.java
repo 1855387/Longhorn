@@ -20,7 +20,7 @@ public class Sorts {
             data.add((int)(Math.random() * (size+1)));
         }
 
-        // use Inheritance and Polymorphism to replace data.sort with your own algorithm
+        // made it available to pass in a string to run the certain sort
         switch(algo) {
             case "Merge":
                 Merge.sort(data);
@@ -70,6 +70,7 @@ public class Sorts {
             time += s.getTimeElapsed();
             lowandhigh.add(s.getTimeElapsed());
         }
+        // Analysis carried out on the sorts
         Collections.sort(lowandhigh);
         System.out.println(" ");
         System.out.println(algo +" Sort Analysis");
@@ -89,7 +90,7 @@ public class Sorts {
     }
 
     public static void main(String[] args){
-
+        // recurring menu taking in user input for which algorithm people want to analyze, contributed by Calvin
         while (1 == 1) {
 
             Scanner myObj = new Scanner(System.in);  // Create a Scanner object

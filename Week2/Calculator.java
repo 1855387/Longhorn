@@ -74,6 +74,7 @@ public class Calculator {
                     Double numb2 = Double.parseDouble(calc.pop().toString());
                     Double numb1 = Double.parseDouble(calc.pop().toString());
                     switch(this.reverse_polish.get(x)){
+                        // these lines carry out operations based on predefined mathematical expressions or user input
                         case "+":
                             calc.push(numb1 + numb2);
                             break;
