@@ -1,5 +1,6 @@
 package Week1;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
@@ -29,10 +30,20 @@ public class Queue<T> implements Iterable<T> {
     }
   }
 
-  public void delete(){
-        head = head.getNext(); //sets the head to the next thing
+  public void remove(T data) {
+    LinkedList<T> tail = new LinkedList<>(data, null);
+    if(head == null){
+      throw new RuntimeException("Deque is empty");
     }
-  
+
+    if(head.getNext() == null){
+      tail = null;
+    }else{
+      // previous of next node (new first) becomes null
+      head.getNext().setPrevNode(tail);
+    }
+    head = head.getNext();
+  }
   /**
     *  Returns the head object.
     *
@@ -86,66 +97,5 @@ class QueueIterator<T> implements Iterator<T> {
     current = current.getNext();
     return data;
   }
-}
-
-/**
- * Week2.Queue Manager
- * 1. "has a" Week2.Queue
- * 2. support management of Week2.Queue tasks (aka: titling, adding a list, printing)
- */
-class QueueManager<T> {
-  // queue data
-  private final String name; // name of queue
-  private int count = 0; // number of objects in queue
-  public final Queue<T> queue = new Queue<>(); // queue object
-
-  /**
-    *  Week2.Queue constructor
-    *  Title with empty queue
-    */
-  public QueueManager(String name) {
-    this.name = name;
-  }
-
-  /**
-    *  Week2.Queue constructor
-    *  Title with series of Arrays of Objects
-    */
-  public QueueManager(String name, T[]... seriesOfObjects) {
-    this.name = name;
-    this.addList(seriesOfObjects);
-  }
-
-  /**
-    * Add a list of objects to queue
-    */
-  public void addList(T[]... seriesOfObjects) {
-    for (T[] objects: seriesOfObjects)
-      for (T data : objects) {
-        this.queue.add(data);
-        this.count++;
-      }
-    }
-
-  public void add(T data) {
-    this.queue.add(data);
-    this.count++;
-  }
-
-  public void delete() {
-    this.queue.delete();
-    this.count--;
-  }
-  
-    /**
-     * Print any array objects from queue
-     */
-    public void printQueue() {
-      System.out.println(this.name + " count: " + count);
-      System.out.print(this.name + " data: ");
-      for (T data : queue)
-        System.out.print(data + " ");
-      System.out.println();
-    }
 }
 

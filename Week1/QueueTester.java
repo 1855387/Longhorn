@@ -6,24 +6,14 @@ package Week1;
  */
 public class QueueTester {
     public static void main(String[] args) {
-        // Create iterable Week2.Queue of Words
+        // Create iterable Queue of Words
         Object[] words = new String[]{"seven", "slimy", "snakes", "sallying", "slowly", "slithered", "southward"};
-        // Week2.QueueManager qWords = new Week2.QueueManager("Words", words);
-        // qWords.printQueue();
-
-        QueueManager qWords = new QueueManager("Words");
-        for (Object word : words) {
-            qWords.add(word);
-            qWords.printQueue();
-        }
-        for (Object word : words) {
-            qWords.delete();
-            qWords.printQueue();
-        }
+        QueueManager qWords = new QueueManager("Words", words);
+        qWords.removeList(words);
 
         // Create iterable Week2.Queue of Integers
         Object[] numbers = new Integer[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-        QueueManager qNums = new QueueManager("Integers", numbers);
-        qNums.printQueue();
+        QueueManager qNums = new QueueManager("Integers");
+//        qNums.printQueue();
     }
 }
