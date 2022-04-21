@@ -6,7 +6,7 @@
 
 ## Unit 1 Primitive Data Types in Java
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/W0q7XkV7BTo/0.jpg)](https://apclassroom.collegeboard.org/8/assignments?apd=4bsjoi2rui&status=assigned&unit=-2)
+[![Click to Watch](https://img.youtube.com/vi/W0q7XkV7BTo/0.jpg)](https://apclassroom.collegeboard.org/8/assignments?apd=4bsjoi2rui&status=assigned&unit=-2)
 
 - In Java, there are 8 primitive data types
 - First will focus on the difference between doubles and integers
