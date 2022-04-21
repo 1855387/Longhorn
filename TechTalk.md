@@ -1,6 +1,23 @@
 {% include navigation.html %}
 
-# Tech Talk Notes
+# TT + Faculty Notes
+
+# Study Week 1 (Faculty Lecture Notes)
+
+## Unit 1 Primitive Data Types in Java
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/W0q7XkV7BTo/0.jpg)](https://apclassroom.collegeboard.org/8/assignments?apd=4bsjoi2rui&status=assigned&unit=-2)
+
+- In Java, there are 8 primitive data types
+- First will focus on the difference between doubles and integers
+![image](https://user-images.githubusercontent.com/72889453/164511544-02672c46-43ce-450d-8f28-d008e3a4316d.png)
+- Trying to store the values added together in sum as an int would result in an error because data can be lost in that calculation.
+- Take in information, manipulate it, and output new information (point of code)
+  ![image](https://user-images.githubusercontent.com/72889453/164512875-0e2b7d7b-dd5d-4f61-b51c-378f96046817.png)
+  ![image](https://user-images.githubusercontent.com/72889453/164514476-8c3f119c-4f04-4e7d-83ab-fff0e91f416c.png)
+- Strings are NOT primitive data types
+
+
 # Tech Talk 3 
 ## (Merge is best because of its pure efficiency)
 

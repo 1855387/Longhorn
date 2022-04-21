@@ -31,3 +31,4 @@
 | 2 | [Data Structures Challenge 2 + Team Grading](https://github.com/1855387/individual/issues/3) |
 | 3 | [Analysis and Sorts](https://github.com/1855387/IndividualCSAR/issues/1#issue-1192054558) |
 | 4 | [Individual Data Structures Final](https://github.com/1855387/IndividualCSAR/issues/2#issue-1192613344) |
+| 5 | [Study Week 1](https://github.com/1855387/btbdubs/issues/6) |
