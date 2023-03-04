@@ -3,4 +3,4 @@ layout: default
 ---
 {% include navigation.html %}
 
-{% include_relative README.md %}
+{% include_relative home.md %}
