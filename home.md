@@ -3,7 +3,6 @@
 
 # Longhorn Team Page
 
-![image](https://trymondo.com/wp-content/uploads/2020/11/Chatbot.gif)
 ## Github Pages Link
 
 - [Github Page](https://1855387.github.io/Longhorn/Repl)
